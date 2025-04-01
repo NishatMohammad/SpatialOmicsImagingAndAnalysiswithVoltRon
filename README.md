@@ -170,7 +170,7 @@ Update file paths in the script to match your local data directories
 
 Run sections sequentially:
 ```r
-source("spatial_omics_analysis.R")
+source("scripts/SpatialOmicsCaBreast.R")
 ```
 
 ### Expected Runtime
