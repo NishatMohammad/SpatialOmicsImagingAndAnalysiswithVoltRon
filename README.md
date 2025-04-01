@@ -2,7 +2,7 @@
 
 This repository contains analysis scripts from **compgen2025 Module 2: Introduction to Spatial Omics** (taught by Artur Manukyan) and demonstrates comprehensive spatial omics workflows using VoltRon and Seurat R packages. The analysis focuses on breast cancer tumor microenvironment datasets from 10x Genomics Visium and Xenium platforms.
 
-## Key Features
+## Features
 - **Multi-modal integration**: Combines transcriptomics with H&E imaging
 - **Scalable processing**: Disk-backed operations for large datasets
 - **Advanced visualization**: Spatial plotting with customizable parameters
@@ -12,6 +12,31 @@ This repository contains analysis scripts from **compgen2025 Module 2: Introduct
 ## Datasets Used
 - [Xenium Human Breast Cancer Preview Dataset](https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast)
 - [Visium HD CytAssist Gene Expression Dataset](https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-human-breast-cancer-fresh-frozen)
+
+-  Visium (Anterior and Sagittal Brain Sections)
+
+  https://www.10xgenomics.com/datasets/mouse-brain-serial-section-1-sagittal-anterior-1-standard-1-1-0
+  
+  https://www.10xgenomics.com/datasets/mouse-brain-serial-section-1-sagittal-posterior-1-standard-1-1-0
+
+- scRNASeq (Allen Institute adult mouse brain cortical cells)
+
+  https://www.nature.com/articles/nn.4216
+
+  https://www.dropbox.com/s/cuowvm4vrf65pvq/allen_cortex.rds?dl=1
+
+- Xenium In Situ Replicate 1 (Breast Cancer)
+
+  https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast
+
+- Xenium Lung COVID19
+
+  https://bimsbstatic.mdc-berlin.de/landthaler/VoltRon/Multiomics/acutecase1_annotated.rds
+
+- Visium Cytassist (Breast Cancer)
+
+  https://www.10xgenomics.com/products/xenium-in-situ/preview-dataset-human-breast
+
 
 ## Computational Environment
 - **R 4.4.2**
@@ -51,7 +76,8 @@ RBioFormats may require manual Java configuration
 
 Install BPCells v0.3.0 before VoltRon
 
-### Analysis Workflow
+
+## Analysis Workflow
 
 ### Visium Data Analysis
 
@@ -144,7 +170,7 @@ Update file paths in the script to match your local data directories
 
 Run sections sequentially:
 ```r
-source("spatial_omics_analysis.R")
+source("scripts/SpatialOmicsCaBreast.R")
 ```
 
 ### Expected Runtime
